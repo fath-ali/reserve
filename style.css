@@ -1,0 +1,1359 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  font-size: 1.6rem;
+}
+body{
+  position: relative;
+}
+.header{
+  background-image: url("images/room2.jpg");
+  min-height: 100vh;
+  background-position:center;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-size:cover;
+  width: 100%;
+  position: relative;
+}
+.header-content{
+  /* height: 300px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:rgb(32, 32, 4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5);
+  padding: 30px 10px;
+  /* border-left: 4px solid yellow;
+  border-right: 4px solid yellow;
+  border-bottom: 4px solid yellow; */
+  background-image: url("images/rooom.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+
+}
+.header-content::before{
+  content: '';
+  position: absolute;
+  bottom: -149px;
+  height: 150px;
+  width: 50%;
+  background-color:transparent;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 10px;
+  background-image: url('images/rooom.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+.header-content h1{
+  text-transform: capitalize;
+  font-weight: 800;
+  color:black;
+
+}
+.header-content p{
+  font-size:2rem;
+color: white;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.header-content button{
+  padding: 20px 40px;
+  font-size: 1.3rem;
+  outline: none;
+  background-color:rebeccapurple;
+  border-radius: 40px;
+  color: white;
+  border: none;
+  text-transform: capitalize;
+}
+
+nav{
+  color: #000000 !important;
+  width: 100%;
+}
+
+ul li a{
+  color: #000000 !important;
+  font-size: 1.7rem;
+  padding-left: 20px !important;
+  text-transform: capitalize;
+}
+ul li a.active{
+  background-color: orangered;
+  width: 100%;
+  height: 100%;
+  color: white !important;
+}
+a:hover:not(.active){
+  background-color: rgb(173, 171, 171);
+}
+.navbar-container{
+  display: flex !important;
+  justify-content: space-between !important;
+  font-size: 1rem !important;
+}
+.dropdown-menu a{
+  font-size: 1.6rem !important;
+  padding: 20px 15px !important;
+  background:rgb(0, 66, 124);
+  color: white ;
+  width: 300px;
+}
+.header form{
+  width: 50%;
+  background-color: white;
+  margin-left: 30px;
+  margin-top: 7%;
+  font-size: 1.5rem;
+  height:77vh;
+  border-radius: 10px;
+  transform: scale(-0.01);
+  visibility: hidden;
+  transition: all ease-in-out 800ms;
+}
+.header form.active{
+  transform: scale(1);
+  visibility: visible;
+  z-index: 100;
+  
+}
+.headerform{
+  width: 100%;
+  background-color: orangered;
+  padding: 20px 20px;
+  font-size: 3rem;
+  color: #ffff;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.header form label{
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  padding-left: 15px;
+  padding-top: 17px;
+}
+.header form .form-group input{
+  height: 60px;
+  width: 80%;
+  margin-left: 20px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+}
+.header form button{
+  height: 50px;
+  margin-left: 20px;
+  font-size: 1.4rem;
+}
+.row1{
+  width: 21%;
+  font-size: 1.5rem;
+}
+.firt{
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+
+}
+.row1 input{
+  outline: none;
+  border: none;
+  border: 1px solid #ccc;
+  height: 60px;
+  border-radius: 10px;
+  margin-left: 30px;
+  padding-left: 20px;
+}
+.firt label{
+  padding-left: 30px;
+}
+.firt button{
+  width: 10%;
+  height: 60px;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: orangered;
+  border-radius: 6px;
+  margin-top: 40px;
+  margin-right: 60px;
+  font-size: 1.6rem;
+  color: white;
+}
+#Room{
+  position: relative;
+
+}
+#box-container1{
+  margin-top: 20px;
+  position: relative;
+}
+.box-container{
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+.boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+.boxes .box{
+  width: 23%;
+  height: auto;
+  box-shadow: 0px 0px 10px 10px whitesmoke;
+  /* margin-top: 5%; */
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+.box .content-box{
+  padding: 20px;
+  font-family: sans-serif;
+  line-height: 27px;
+  position: relative;
+}
+.content-box h5{
+  font-size: 2rem;
+}
+.content-box p{
+  text-transform: capitalize;
+  color: #333;
+}
+.image-box{
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.image-box img{
+  width: 100%;
+  height: 100%;
+}
+.box button{
+  padding: 10px ;
+  font-size: 1.5rem;
+  text-transform: inherit;
+}
+.box-container form{
+  width: 50%;
+  padding: 30px 10px;
+  box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  text-align: center;
+  transform: scale(0.1);
+  visibility: hidden;
+  transition: 1s ease-in-out;
+}
+.box-container form.active{
+  transform: scale(1);
+}
+.inputed{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 20px auto;
+  gap: 30px;
+  font-family: sans-serif;
+}
+.inputed input{
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+   padding: 10px 10px;
+   border-radius: 10px;
+}
+.box-container form .btn{
+  margin: 10px auto !important;
+  padding: 10px 40px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+/* -----------------------------------Gallery------------------------------- */
+#container-gallery{
+  margin-top: 100px;
+  padding: 20px 10px;
+}
+.gallery-container{
+  width: 95%;
+  height: auto;
+  margin: 20px auto;
+
+}
+.gallery-container h1{
+  text-align: center;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+.gallery-image{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  overflow: hidden;
+  row-gap: 50px;
+  margin-top: 60px;
+}
+.gallery-image .image img{
+  width: 95%;
+  height: 95%;
+  /* filter: grayscale(10%); */
+  transition: all ease-in-out 0.6s;
+}
+.gallery-image .image:hover img{
+  transform:scale(1.6);
+}
+.gallery-image .image{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  border: 2px solid #ccc;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+.gallery-image .image .icon{
+  width: 50px;
+  height: 50px;
+  background-color:blue;
+  color: white;
+  border-radius: 10%;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+  z-index: 1;
+  visibility: hidden;
+  transform: scale(0.1);
+  transition:all ease-in-out 800ms;
+}
+.gallery-image .image:hover .icon{
+  visibility: visible;
+  transform: scale(1);
+}
+.gallery-image .image .save{
+  width: 50px;
+  height: 50px;
+  background-color:blue;
+  color: white;
+  border-radius: 10%;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  left: 30px;
+  bottom: 40px;
+  z-index: 2;
+  visibility: hidden; 
+   transform: scale(0.1);
+  transition:all ease-in-out 800ms;
+
+}
+.gallery-image .image:hover .save{
+  transform: scale(1);
+  visibility: visible;
+}
+
+/* -----------------------------------pakachages--------------------------------------------- */
+
+#pachages{
+  margin: 60px 10px;
+}
+.pakachage{
+  font-family: sans-serif;
+  padding: 20px 20px;
+}
+.pakaches-food{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
+  /* column-gap: 20px; */
+  row-gap: 60px;
+}
+.food-box{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  border-radius: 10px;
+  margin-left: 30px;
+  overflow: hidden;
+}
+.food-box .foodimage{
+  width: 100%;
+  height: 350px;
+  overflow:hidden;
+  object-fit: cover;
+}
+.food-box .foodimage img{
+  width: 100%;
+  height: 100%;
+}
+.food-box h3{
+  padding-left: 25px;
+  padding-top: 20px;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.food-box p{
+  padding-left: 25px;
+  text-align: justify;
+  padding-right: 25px;
+  font-family: sans-serif;
+}
+.star{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  color: orange;
+}
+.food-box button{
+  height: 60px;
+  width: 150px;
+  margin-left: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  background-color: orange;
+  color: white;
+   font-size: 1.4rem;
+   border-radius: 5px;
+   transition: background-color ease-in-out 800ms;
+}
+.food-box button:hover{
+  background-color: rgb(124, 124, 123);
+}
+.span{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}
+.span span{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(236, 230, 218);
+  text-align: center;
+  padding-top: 5px;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+.container-about{
+  margin: 30px auto;
+  font-family: sans-serif;
+}
+.container-about{
+  width: 95%;
+  height: auto;
+  padding: 20px 10px;
+}
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 50px;
+}
+.about .imageabout{
+  width: 80%;
+  height: 700px;
+  overflow: hidden;
+}
+.about .imageabout img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.aboutus{
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border: 2px soldi #ccc;
+  padding: 10px 30px;
+  width: 95%;
+}
+.aboutus .butoncontainer{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.about .aboutus .butoncontainer button:not(.active):hover{
+  background-color: black;
+  color: white;
+}
+.about .aboutus .butoncontainer button{
+  width: 50%;
+  height: 50px;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  transition: all ease .5s;
+}
+.about .aboutus .butoncontainer button.active{
+  background-color: #5c5b5b;
+  color: white;
+}
+.about .aboutus .section-content{
+  padding: 30px 0;
+  font-family:'Times New Roman', Times, serif;
+  text-align: justify;
+}
+.section-content .content{
+  display: none
+}
+.section-content .content.active{
+  display: block;
+  transition: 2s ease-in-out;
+}
+.content button{
+  width: 20%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  background-color: orangered;
+  color: white;
+}
+#p1{
+  display: none;
+}
+#p1.active{
+  display: block;
+}
+.visioncontainer{
+display: flex;
+justify-content: flex-start;
+gap: 20px;
+}
+.visioncontainer .image-vision{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.visioncontainer .image-vision img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.visioncontainer .content-vision{
+  line-height: 10px;
+}
+.visioncontainer .content-vision p{
+  font-size: 1.1rem;
+}
+.visioncontainer .content-vision h5{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+#service{
+  width: 95%;
+  height: auto;
+  padding: 30px 20px;
+  margin: 40px auto;
+}
+#service .heading{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  text-transform: uppercase;
+
+}
+#service .heading span{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(236, 230, 218);
+  text-align: center;
+  padding-top: 5px;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+#service .service-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 20px;
+}
+#service .service-container .box-service{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10%;
+  padding: 30px 20px;
+  transition: box-shadow ease 0.3s;
+}
+.box-service h3{
+  text-transform: capitalize;
+  font-family: sans-serif;
+  padding-top: 10px;
+}
+.box-service p{
+  text-transform: capitalize;
+  text-align: justify;
+  padding: 0 10px;
+}
+.box-service:hover{
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.box-service .logo i{
+  font-size: 3rem;
+  color: orange;
+}
+ #des{
+  padding: 0 100px;
+ }
+
+ .wrapper{
+  width: 100%;
+  position: relative;
+ }
+.wrapper .carousel1{
+  display: grid;
+  grid-auto-flow:column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 30px;
+  overflow:hidden;
+  border: none;
+  scroll-behavior: smooth;
+
+padding: 20px 30px;
+}
+.carousel1 .card{
+
+  transition: all ease 3s;
+  width: 90%;
+  height: 400px;
+  list-style: none;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  z-index: 1;
+} 
+
+.card .img img{
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.card h2{
+font-size: 2rem;
+text-transform: capitalize;
+font-weight: 400;
+}
+.card span{
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
+.card button{
+  width: 40% !important;
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 30px;
+  font-size: 1.4rem;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+#right{
+   position: absolute;
+   right: -80px;
+   top: 50%;
+   z-index: 1;
+}
+#left{
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  left: -80px;
+}
+.accar{
+  width: 90%;
+  height: auto;
+  /* background-color: red; */
+ margin: 30px auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 5px;
+}
+.accord-item{
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  width: 70%;
+}
+.accord-item .accord-header{
+  background:linear-gradient(315deg,#ff9900 0%,red 75%);
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  position: relative;
+}
+.accar .accord-item .accord-header::before{
+  content: '+';
+  position: absolute;
+  right: 10px;
+  top: 50%; 
+  transform: translateY(-50%);
+  font-size: 2rem;
+  font-weight: 800;
+  transition: transform 0.3s;
+}
+.accar .accord-item.active .accord-header::before{
+content: '-';
+font-size: 2rem;
+transform: translateY(-50%) rotate(180deg);
+
+}
+.accar .accord-item .text{
+  height: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  transition: height 0.5s,padding 0.3s;
+  background:#ddeedd;
+  border-radius: 0px 0px 5px 5px;
+}
+.accar .accord-item.active .text{
+height:auto;
+padding: 10px;
+}
+
+.accar .accord-item.active .accord-header{
+  background: linear-gradient(315deg,red 0%,blue 74%);
+}
+
+
+/* ---------------------------------payment------------------------------------- */
+#box-container1 .container20{
+  position: absolute;
+  position: sticky;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  top:-10px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color:white;
+  padding: 20px 30px;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+.container20 .icon-book{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 50%;
+  padding-top: 5px;
+  position: absolute;
+  right: 20px;
+}
+#box-container1 .container20.active-show{
+  display: block;
+}
+.container20 .booking{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;  
+  border: 2px solid #ccc;
+  overflow: scroll;
+  
+}
+.container20 .booking .content{
+  padding-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.container20 .booking .content h1{
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}
+.container20 .booking .content span{
+  font-size: 1.3rem;
+  color: black;
+}
+.container20 .booking .content p{
+  font-size: 1.4rem;
+  word-break: break-all;
+  color: black;
+}
+.container20 .booking .image20{
+  overflow: hidden;
+   width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.container20 .booking .image20 img{
+  width: 100%;
+  height: 100%;
+}
+.container20 .submision{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 100vh;
+  background: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  z-index: 1;
+  overflow: hidden;
+  width: 42%;
+  transform: scale(0.2);
+  display: none;
+  transition: ease 2;
+}
+.container20 .submision.show{
+  display: block;
+  transform: scale(1);
+}
+.container20 .submision .submision-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px;
+  /* background-color: red; */
+  width: 900px;
+  height: 850px;
+}
+.container20 .submision .submision-container .image1{
+  width: 350px;
+  height: 350px;
+  background-color: blue;
+  overflow: hidden;
+  /* margin-top: 30%; */
+  border-radius: 40px;
+}
+.container20 .submision .submision-container .sub-content{
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.container20 .submision .submision-container .sub-content h1{
+  padding-bottom: 4px;
+}
+.container20 .submision .submision-container .image1 img{
+  width: 100%;
+  height: 100%;
+}
+
+.container20 .booking .image img{
+  width: 100%;
+  height: 100%;
+}
+form{
+  padding-top: 20px;
+
+}
+form .form1{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+}
+form .form1 .input1{
+  display: flex;
+  column-gap: 20px;
+  /* background-color: red; */
+  width: 100%;
+}
+form .form1 .input1 input{
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 1.3rem;
+}
+
+form .form1 .input1 input.active{
+  border: 2px solid green;
+}
+form .form1 .input1 input.disactive{
+  border: 2px solid red;
+}
+form .form1 .input2{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  color: black;
+}
+form .form1 .input2 input.active{
+  border: 2px solid green;
+}
+form .form1 .input2 input.disactive{
+  border: 2px solid red;
+}
+form .form1 .input2 label{
+  font-size: 1.5rem;
+  padding-top: 20px;
+  
+}
+form .form1 .input2 span{
+  font-size: 1.5rem;
+  padding-top: 20px;
+  
+}
+form .form1 .input2 input{
+  height: 50px;
+  outline: none;
+  border: none;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 1.3rem;
+}
+form .form1 .input3{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 100%;
+  margin-top: 30px;
+  gap: 20px;
+}
+form .form1 .input3 input.active{
+  border: 2px solid green;
+}
+form .form1 .input3 input.disactive{
+  border: 2px solid red;
+}
+form .form1 .input3-input1{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form .form1 .input3-input1 input{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border:2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  padding-left:20px;
+}
+form .form1 .input3-input1 span{
+  color: black;
+  font-size: 1.4rem;
+}
+form .form1 .input3-input2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form .form1 .input3-input2 input{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border:2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  padding-left:20px;
+}
+form .form1 .input3-input2 span{
+  color: black;
+  font-size: 1.4rem;
+}
+form .form1 .input10{
+  margin-top: 20px;
+  width: 100%;
+  /* height:50px; */
+}
+form .form1 .input10 input.active{
+  border: 2px solid green;
+}
+form .form1 .input10 input.disactive{
+  border: 2px solid red;
+}
+form .form1 .input10-input{
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  
+  
+}
+form .form1 .input10-input input{
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid #ccc;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  padding-left: 20px;
+  border-radius: 10px;
+  
+}
+
+form .form1 .input10-input span{
+  color: black;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+form .form1 .input4{
+  display: flex;
+  column-gap: 20px;
+  /* background-color: red; */
+  width: 100%;
+}
+form .form1 .input4-input{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  text-transform: capitalize;
+  color: black;
+}
+form .form1 .input4 input.active{
+  border: 2px solid green;
+}
+form .form1 .input4 input.disactive{
+  border: 2px solid red;
+}
+form .form1 .input4-input span{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+form .form1 .input4-input input{
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid #ccc;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+form .form1 .input4-input1{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  text-transform: capitalize;
+  color: black;
+}
+form .form1 .input4-input1 input{
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid #ccc;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+form .form1 .input4-input1 span{
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+form .form1 .input8{
+  margin-top: 20px;
+  position: relative;
+}
+form .form1 .input8 .input8-input{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;  
+}
+form .form1 .input8 .input8-input input{
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid #ccc;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+form .form1 .input8 label{
+color: black;
+font-size: 1.4rem;   
+}
+form .form1 .input5{
+  margin-top: 20px;
+  position: relative;
+}
+form .form1 .input5 input.active{
+  border: 2px solid green;
+}
+form .form1 .input5 input.disactive{
+  border: 2px solid red;
+}
+form .form1 .input5 label{
+  font-size: 1.4rem;
+  color: black;
+  text-align: start;
+  margin-bottom: 20px;
+}
+form .form1 .input5 .input5-input{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+form .form1 .input5 .input5-input input.active{
+  border: 2px solid green;
+}
+form .form1 .input5 .input5-input input.disactive{
+  border: 2px solid red;
+}
+form .form1 .input5 .input5-input input{
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid #ccc;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+form .form1 .input5 .input5-input select{
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid #ccc;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+form .form1 .input6{
+  margin-top: 20px;
+  width: 100%;
+  color: black;
+  font-size: 1.4rem;
+}
+form .form1 .input6-input{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 20px;
+}
+form .form1 .input6 .input6-input input.active{
+  border: 2px solid green;
+}
+form .form1 .input6 .input6-input input.disactive{
+  border: 2px solid red;
+}
+form .form1 .input6-input .input6-input1{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+form .form1 .input6-input .input6-input1 input{
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid #ccc;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+form .form1 .input6-input .input6-input2{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+form .form1 .input6-input .input6-input2 input{
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid #ccc;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+form .form1 .payment{
+  margin-top: 20px;
+  width: 100%;
+  font-size: 1.4rem;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 100;
+
+}
+form .form1 .payment .payment1{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+form .form1 .paypal{
+  margin-top: 40px;
+  width: 100%;
+  display: none;
+  transition: all ease-in-out 1s;
+  transform: scale(-0);
+}
+form .form1 .paypal.active{
+  display: block;
+  transform: scale(1);
+}
+form .form1 .paypal .paypalpay{
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 30px;
+  /* border-bottom: 2px solid #ccc; */
+  color: black;
+  font-size: 1.3rem;
+}
+form .form1 .paypal .paypalpay .paypal1{
+  display: flex;
+  justify-content: space-between;
+}
+form .form1 .paypal .paypalpay .paypal1 .paypal1-input{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.paypal1 .paypal1-input .payapal-input2{
+  font-size: 1rem;
+  margin-left: 50px;
+  margin-bottom: 5px;
+}
+.paypal1 .paypal1-input .payapal-input2 select{
+  width: 20%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+
+}
+form .form1 .textarea1{
+  width: 100%;
+  margin-top: 40px;
+}
+form .form1 .textarea1 h5{
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+form .form1 .textarea1 textarea{
+  width: 100%;
+  padding: 30px 20px;
+  border: none;
+  outline: none;
+  resize: none;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  height: 200px;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+form .form1 #button{
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+form .form1 #button.active::before{
+  content: 'please wait..';
+  position: absolute;
+  background-color: blue;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 20px;
+
+
+
+}
+
+
+
+
+/* ------------------------------fision------------------------------------------------- */

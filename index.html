@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <script src="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/js/all.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js1/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <nav class="navbar-expand-md bg-light navbar-dark">
+       <div class="navbar-container">
+         <ul class="navbar-nav">
+          <li class="nav-item"><a href="" class="nav-link active" >Logo</a></li>
+          <div class="dropdown">
+              <!-- ------------------------dropdown lIST -------------------------------- -->
+          <li class="nav-item "  data-toggle="dropdown"><a href="" class="nav-link dropdown-toggle">Rooms</a></li>
+          <div class="dropdown-menu">
+            <a href="#container-gallery" class="dropdown-item">VIP Rooms</a>
+            <a href="#container-gallery" class="dropdown-item">Spicial Room</a>
+            <a href="#container-gallery" class="dropdown-item">Simple Room</a>
+            <a href="#container-gallery" class="dropdown-item">Expansive Room</a>
+            <a href="#container-gallery" class="dropdown-item">Cheap Room</a>
+          </div>
+          </div>
+        
+          <li class="nav-item"><a href="#about-Us" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+         </ul>
+        
+         <button class="btn btn-danger button1">BOOK NOW</button>
+       </div>
+      </nav>
+      <!-- ------------------------------booking Now -------------------------------- -->
+
+      <form action="">
+        <div class="headerform">
+          <h1>Hotel Name</h1>
+          <div class="hotemicon">
+            <i class="fas fa-close"></i>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Check In</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="">Adults</label>
+          <input type="number" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="">Check Out</label>
+          <input type="date" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="">kids</label>
+          <input type="number" class="form-control" required>
+        </div>
+        <button class="btn btn-info">Send Message</button>
+      </form>
+
+
+      <div class="header-content">
+        <h1>Online Restorant</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Aliquid tenetur autem dolores officia corrupti
+           , saepe quisquam hic officiis nulla harum?</p>
+          <button>See More</button>
+      </div>
+  </div>
+
+ <section id="Rooms">
+ 
+       
+
+  <div class="container-fluid mt-5">
+    <h1 class="pl-3 mb-4">ROOMS</h1>
+    <p class="load pl-3 mb-4">
+      Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+      <form action="">
+        <div class="d-flex flex-row firt">
+          <div class="d-flex flex-column row1">
+         <label for="" >Check In</label>
+        <input type="date">
+        </div>
+        <div class="d-flex flex-column row1">
+        <label for="">Check Out</label>
+        <input type="date">
+        </div>
+        <div class="d-flex flex-column row1" >
+        <label for="">Adults</label>
+        <input type="number">
+        </div>
+        <div class="d-flex flex-column row1">
+        <label for="">Kids</label>
+        <input type="number">
+        </div>
+        <button>Search</button>
+        </div>
+      </form>
+  </div>
+ </section>
+   <!-- ---------------------------boxes--------------------------------- -->
+    <section id="box-container1">
+
+      <!-- --------------------------startheare-------------------------------------------------- -->
+      <div class="container20">
+        <div class="icon-book">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="booking">
+            <div class="image20">
+                <img src="images/food3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Hotel reservation form</h1>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, necessitatibus!</p>
+            </div>
+            <form action="">
+                <div class="form1">
+                    <div class="input1">
+                        <input type="text" placeholder="Enter Your Name" pattern="[a-zA-Z]{4,12}"   id="name">
+                        <input type="text" placeholder="Enter last name"  pattern="[a-zA-Z]{4,12}"   id="lname">
+                        <small class="error"></small>
+                    </div>
+                    <div class="input2">
+                        <label for="">Addresss</label><br>
+                        <input type="text" id="address">
+                        <span>street 1</span>
+                        <input type="text" required id="street1">
+                        <span>street 2</span>
+                        <input type="text" required id="street2">
+                        <small class="error"></small>
+                    </div>
+                    <div class="input3">
+                        <div class="input3-input1">
+                        <input type="text" required id="city">
+                        <span>City</span>
+                        </div>
+                        <div class="input3-input2">
+                        <input type="text" required id="province">
+                        <span>stat/province</span>
+                        </div>
+                        <small class="error"></small>
+                    </div>
+                    <div class="input10">
+                        <div class="input10-input">
+                        <input type="number" required id="postal">
+                        <span>Postal code</span>
+                        </div>
+                        <small class="error"></small>
+                    </div>
+                     <div class="input4">
+                        <div class="input4-input">
+                            <span>phone numnber</span>
+                            <input type="number" required id="number">
+                            </div>
+                            <div class="input4-input1">
+                            <span>Email</span>
+                            <input type="email" required id="Email">
+                            </div>
+                            <small class="error"></small>
+                     </div>
+
+                     <div class="input5">
+                        <label for="">Arrival- Date and Time</label>
+                        <div class="input5-input">
+                            <input type="date">
+                            <input type="time" >
+                            <select name="" id="">
+                                <option value="">PM</option>
+                                <option value="">AM</option>
+                            </select>
+                        </div>
+                        <small class="error"></small>
+                     </div>
+
+                     <div class="input5">
+                        <label for="">Departure - Date and Time</label>
+                        <div class="input5-input">
+                            <input type="date"  required>
+                            <input type="time" required>
+                            <select name="" id="">
+                                <option value="">PM</option>
+                                <option value="">AM</option>
+                            </select>
+                        </div>
+                        <small class="error"></small>
+                     
+                      
+                     <div class="input6">
+                          <div class="input6-input">
+                            <div class="input6-input1">
+                                <span>Number of Adult</span>
+                                <input type="number" required id="numberofPerson">
+                            </div>
+                            <div class="input6-input2">
+                                <span>Number Of Kids</span>
+                                <input type="number" required id="numberofkids">
+                            </div>
+                          </div>
+                          <small class="error"></small>
+                     </div>
+                     <div class="payment">
+                        <span>payment Method</span>
+                        <div class="payment1">
+                            <div class="payment2" >
+                            <input type="checkbox" name="123"> check
+                            </div>
+                               <div class="payment23">
+                            <input type="checkbox" name="123" id="pay"> paypal
+                            </div>
+                        </div>
+                       
+                     </div>
+
+
+                    <div class="paypal">
+                     <div class="paypalpay">
+                        <div class="paypal1">
+                            <div class="paypal1-input">
+                                <div class="radion">
+                                <input type="radio" name="123">
+                                 <span>$100/Night-mountain View</span>
+                                 </div>
+                                 <div class="payapal-input2">
+                                    <span>Numbers OF Nights</span>
+                                    <select >
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                 </div>
+                            </div>
+                            <div class="paytext">
+                                <h3>$100.000</h3>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="paypal1">
+                            <div class="paypal1-input">
+                                <div class="radion">
+                                <input type="radio" name="123">
+                                 <span>$120/Night-Ocean View</span>
+                                 </div>
+                                 <div class="payapal-input2">
+                                    <span>Numbers OF Nights</span>
+                                    <select >
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                 </div>
+                            </div>
+                            <div class="paytext">
+                                <h3>$120.000</h3>
+                            </div>
+                        </div>
+                         <hr>
+
+                        <div class="paypal1">
+                            <div class="paypal1-input">
+                                <div class="radion">
+                                <input type="radio" name="123">
+                                 <span>$140-City View</span>
+                                 </div>
+                                 <div class="payapal-input2">
+                                    <span>Numbers OF Nights</span>
+                                    <select >
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                 </div>
+                            </div>
+                            <div class="paytext">
+                                <h3>$140.000</h3>
+                            </div>
+                        </div>
+                        <hr>
+                     </div>
+                    </div>
+
+                    <div  class="textarea1">
+                        <h5>Do you have any spcial request</h5>
+                        <textarea name="" id="" cols="30" rows="10">Type here..</textarea>
+                    </div>
+
+                    <button type="submit" id="button">Submit</button>
+                </div>
+               
+            </form>
+        </div>
+        <div class="submision">
+            <div class="submision-container">
+                <div class="image1">
+                  <img src="images/green-correct-sign-vector-icon_547110-418.jpg" alt="">
+                </div>
+                <div class="sub-content">
+                    <h1>Thanks You!</h1>
+                    <p>Your Submition has been received</p>
+                </div>
+            </div>
+        </div>
+        </div>
+     </div>
+     <!-- --------------------------------finish herer---------------------------------------------------- -->
+      <div class="box-container">
+        <div class="boxes">
+          <!-- <div  class="box">
+            <div class="image-box">
+              <img src="images/2650401.jpg" alt=""  class="logo">
+              <button class="btn btn-secondary">Choose Image</button>
+            <div class="content-box">
+              <h5>Single Room</h5>
+              <p>From $99</p>
+              <p>Single bed</p>
+              <p>30m <sup>2</sup></p>
+            </div>
+            <button class="btn btn-block btn-success btn1">Sign Up Now</button>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+<!-- ------------------------------------Gallery- ----------------------------------------------- -->
+ <section id="container-gallery">
+  <div class="gallery-container">
+    <h1>Gallery Image Restorant</h1>
+    <div class="gallery-image">
+      <div class="image">
+        <div class="icon">
+          <i class="fas fa-download"></i>
+        </div>
+        <div class="save">
+          <i class='fas fa-trash'></i>
+        </div>
+      <img src="images/rooom.jpg" alt="">
+      <input type="file" class="file-input" hidden>
+      </div>
+      <div class="image">
+        <div class="save">
+          <i class='fas fa-trash'></i>
+        </div>
+        <div class="icon">
+          <i class="fas fa-download"></i>
+        </div>
+        <img src="images/room1.jpg" alt="">
+        <input type="file" class="file-input" hidden>
+        </div>
+        <div class="image">
+          <div class="save">
+            <i class='fas fa-trash'></i>
+          </div>
+          <div class="icon">
+            <i class="fas fa-download"></i>
+          </div>
+          <img src="images/room2.jpg" alt="">
+          <input type="file" class="file-input" hidden>
+          </div>
+          <div class="image">
+            <div class="save">
+              <i class='fas fa-trash'></i>
+            </div>
+            <div class="icon">
+              <i class="fas fa-download"></i>
+            </div>
+            <img src="images/food2.jpg" alt="">
+            <input type="file" class="file-input" hidden>
+            </div>
+
+            <div class="image">
+              <div class="save">
+                <i class='fas fa-trash'></i>
+              </div>
+              <div class="icon">
+                <i class="fas fa-download"></i>
+              </div>
+              <img src="images/230508-Hugo-Toro-Midland-Grand-Dining-580-Portrait-Web.jpg" alt="">
+              <input type="file" class="file-input" hidden>
+              </div>
+
+              <div class="image">
+                <div class="save">
+                  <i class='fas fa-trash'></i>
+                </div>
+                <div class="icon">
+                  <i class="fas fa-download"></i>
+                </div>
+                <img src="images/food4.jpg" alt="">
+                <input type="file" class="file-input" hidden>
+                </div>
+
+                <div class="image">
+                  <div class="save">
+                    <i class='fas fa-trash'></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fas fa-download"></i>
+                  </div>
+                  <img src="images/food5.jpg" alt="">
+                  <input type="file" class="file-input" hidden>
+                  </div>
+
+                  <div class="image">
+                    <div class="save">
+                      <i class='fas fa-trash'></i>
+                    </div>
+                    <div class="icon">
+                      <i class="fas fa-download"></i>
+                    </div>
+                    <img src="images/food6.jpg" alt="">
+                    <input type="file" class="file-input"  hidden>
+                    </div>
+
+                    <div class="image">
+                      <div class="save">
+                        <i class='fas fa-trash'></i>
+                      </div>
+                      <div class="icon">
+                        <i class="fas fa-download"></i>
+                      </div>
+                      <img src="images/food7.jpg" alt="">
+                      <input type="file" class="file-input" hidden>
+                    </div>
+                   </div>
+                   </div>
+                 </section>
+
+                 <!-- -----------------------------------------------packages---------------------------------- -->
+        <section id="pachages">
+          <div class="pakachage">
+            <div class="span">
+              <span>P</span>
+              <span>A</span>
+              <span>C</span>
+              <span>H</span>
+              <span>A</span>
+              <span>G</span>
+              <span>E</span>
+              <span>S</span>
+            </div>
+            <div class="pakaches-food">
+            </div>
+          </div>
+        </section>
+
+  
+<!-- ----------------------------------------------About Us ----------------------------------------------- -->
+ <section id="about-Us">
+  <div class="container-about">
+    <h1 class="text-center text-uppercase mb-5" style="font-weight: 900;margin-bottom: 100px;">About Us</h1>
+    <div class="about " style="margin-top: 100px;">
+      <div class="imageabout">
+        <img src="images/bed1.jpg" alt="" class="logo">
+      </div>
+      <div class="aboutus">
+        <div class="butoncontainer">
+          <button class="tab-btn active" data-id="history">History</button>
+          <button  class="tab-btn" data-id="vision">vision</button>
+          <button  class="tab-btn" data-id="goals">Goals</button>
+        </div>
+        <div class="section-content">
+        <div class="content active" id="history">
+          <h1>History</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+             sequi corporis non nam possimus iure aut ea accusantium
+             , architecto quam? Eaque, incidunt
+             Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+             sequi corporis non nam possimus iure aut ea accusantium
+             , architecto quam? Eaque, incidunt
+             Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+             sequi corporis non nam possimus iure aut ea accusantium
+             , architecto quam? Eaque, incidunt
+             Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+             sequi corporis non nam possimus iure aut ea accusantium
+             , architecto quam? Eaque, incidunt
+             sequi corporis non nam possimus iure aut ea accusantium
+             , architecto quam? Eaque, incidunt
+             sequi corporis non nam possimus iure aut ea accusantium
+             , architecto quam? Eaque, incidunt
+             sequi corporis non nam possimus iure aut ea accusantium
+             , architecto quam? Eaque, incidunt
+             sequi corporis non nam possimus iure aut ea accusantium
+             .</p>
+            <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Necessitatibus sint sunt doloribus suscipit magnam.
+                Rem, sunt cupiditate. Eos, excepturi nostrum!
+                Rem, sunt cupiditate. Eos, excepturi nostrum!</p>
+            <button>See More</button>
+        </div>
+        <div class="content" id='vision'>
+          <h1>Vision</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+            sequi corporis non nam possimus iure aut ea accusantium
+            , architecto quam? Eaque, incidunt
+            Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+            sequi corporis non nam possimus iure aut ea accusantium
+            , architecto quam? Eaque, incidunt
+            Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+            sequi corporis non nam possimus iure aut ea accusantium
+            , architecto quam? Eaque, incidunt
+            Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+            sequi corporis non nam possimus iure aut ea accusantium
+            Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+            sequi corporis non nam possimus iure aut ea accusantium
+            Dolores, ab placeat assumenda tempore nihil cum hic reiciendi
+            .</p>
+           <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus sint sunt doloribus suscipit magnam.
+               Rem, sunt cupiditate. Eos, excepturi nostrum!
+               Rem, sunt cupiditate. Eos, excepturi nostrum!</p>
+              <div class="visioncontainer">
+                <div class="image-vision">
+                  <img src="images/4.JPG" alt="">
+                </div>
+                <div class="content-vision">
+                <h5>Fathalishah</h5>
+                <p>Web Developer</p>
+                </div>
+              </div>
+            <button>See More</button>
+        </div>
+        <div class="content" id="goals">
+          <h1>Goals</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+            sequi corporis non nam possimus iure aut ea accusantium
+            , architecto quam? Eaque, incidunt
+            Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+            sequi corporis non nam possimus iure aut ea accusantium
+            , architecto quam? Eaque, incidunt
+            Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+            sequi corporis non nam possimus iure aut ea accusantium
+            , architecto quam? Eaque, incidunt
+            Dolores, ab placeat assumenda tempore nihil cum hic reiciendis
+            sequi corporis non nam possimus iure aut ea accusantium
+            , architecto quam? Eaque, incidunt
+            sequi corporis non nam possimus iure aut ea accusantium
+            , architecto quam? Eaque, incidunt
+            sequi corporis non nam possimus iure aut ea accusantium
+            , architecto quam? Eaque, incidunt
+            sequi corporis non nam possimus iure aut ea accusantium
+            , architecto quam? Eaque, incidunt
+            sequi corporis non nam possimus iure aut ea accusantium
+            .</p>
+           <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus sint sunt doloribus suscipit magnam.
+               Rem, sunt cupiditate. Eos, excepturi nostrum!
+               Rem, sunt cupiditate. Eos, excepturi nostrum!</p>
+            <button>See More</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <section id="service">
+   <div class="heading">
+    <span>S</span>
+    <span>E</span>
+    <span>R</span>
+    <span>V</span>
+    <span>c</span>
+    <span>I </span>
+    <span>S</span>
+   </div>
+   <div class="service-container">
+    <!-- <div class="box-service">
+      <i class="fas fa-hotel logo"></i>
+      <h3>affordable hotels</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum totam at, labore provident suscipit
+          reiciendis rerum libero, quam praesentium voluptatibus, maiores ipsa eius eaque necessitatibus?</p>
+    </div> -->
+   </div>
+ </section>
+
+ <section id="des">
+     <div class="wrapper">
+      <h1 class="text-center mb-5">Testominal Us</h1>
+      <div class="icon" id="left">
+        <i class="fas fa-angle-left"></i>
+      </div>
+      <ul class="carousel1">
+        <li class="card">
+         <div class="img">
+          <img src="images/p-11.jpeg" alt="">
+  
+         </div>
+         <h2>Blanche Pearon</h2>
+         <span>sale Manager</span>
+         <button class="btn btn-success">See More</button>
+        </li>
+
+        <li class="card">
+          <div class="img">
+           <img src="images/p-12.jpeg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>IT Manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+
+         <li class="card">
+          <div class="img">
+           <img src="images/p-13.jpg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>Boker Manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+
+         <li class="card">
+          <div class="img">
+           <img src="images/p-14.jpeg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>Buyer Manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+
+         <li class="card">
+          <div class="img">
+           <img src="images/p-12.jpeg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>IT Manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+
+         <li class="card">
+          <div class="img">
+           <img src="images/p-11.jpeg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>cashe manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+
+         <li class="card">
+          <div class="img">
+           <img src="images/p-13.jpg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>HR manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+
+         <li class="card">
+          <div class="img">
+           <img src="images/p-14.jpeg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>Financial Manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+
+
+         
+         <li class="card">
+          <div class="img">
+           <img src="images/p-14.jpeg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>Financial Manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+
+
+         
+         <li class="card">
+          <div class="img">
+           <img src="images/p-14.jpeg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>Financial Manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+
+
+         
+         <li class="card">
+          <div class="img">
+           <img src="images/p-14.jpeg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>Financial Manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+
+
+         
+         <li class="card">
+          <div class="img">
+           <img src="images/p-14.jpeg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>Financial Manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+
+
+         
+         <li class="card">
+          <div class="img">
+           <img src="images/p-14.jpeg" alt="">
+          </div>
+          <h2>Blanche Pearon</h2>
+          <span>Financial Manager</span>
+          <button class="btn btn-success">See More</button>
+         </li>
+      </ul>
+      <div class="icon" id="right">
+        <i class="fas fa-angle-right"></i>
+      </div>
+     </div>
+ </section>
+
+ <section  class="mt-5">
+  <div class="accar">
+    <h2 style="margin-top: 150px;font-size: 3.5rem;margin-bottom: 70px;">if you have any question</h2>
+    <div class="accord-item">
+      <div class="accord-header">what is python</div>
+      <div class="text">
+      <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Aut id dolorem consequuntur 
+        neque, excepturi similique, doloremque cum ea, ullam 
+        laboriosam dolore? Laboriosam, nihil ea. Sit dicta sint minus odio itaque.</p>
+        </div>
+    </div>
+
+    <div class="accord-item">
+      <div class="accord-header">how is our vision to the users</div>
+      <div class="text">
+      <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Aut id dolorem consequuntur 
+        neque, excepturi similique, doloremque cum ea, ullam 
+        laboriosam dolore? Laboriosam, nihil ea. Sit dicta sint minus odio itaque.</p>
+        </div>
+    </div>
+
+    <div class="accord-item">
+      <div class="accord-header">what do we offer</div>
+      <div class="text">
+      <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Aut id dolorem consequuntur 
+        neque, excepturi similique, doloremque cum ea, ullam 
+        laboriosam dolore? Laboriosam, nihil ea. Sit dicta sint minus odio itaque.</p>
+        </div>
+    </div>
+
+    <div class="accord-item">
+      <div class="accord-header">how to subscribe our website</div>
+      <div class="text">
+      <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Aut id dolorem consequuntur 
+        neque, excepturi similique, doloremque cum ea, ullam 
+        laboriosam dolore? Laboriosam, nihil ea. Sit dicta sint minus odio itaque.</p>
+        </div>
+    </div>
+
+    <div class="accord-item">
+      <div class="accord-header">how can i connect with you bro</div>
+      <div class="text">
+      <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Aut id dolorem consequuntur 
+        neque, excepturi similique, doloremque cum ea, ullam 
+        laboriosam dolore? Laboriosam, nihil ea. Sit dicta sint minus odio itaque.</p>
+        </div>
+    </div>
+
+    <div class="accord-item">
+      <div class="accord-header">what do you want to see here</div>
+      <div class="text">
+      <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Aut id dolorem consequuntur 
+        neque, excepturi similique, doloremque cum ea, ullam 
+        laboriosam dolore? Laboriosam, nihil ea. Sit dicta sint minus odio itaque.</p>
+        </div>
+    </div>
+
+    <div class="accord-item">
+      <div class="accord-header">how to join with we more information</div>
+      <div class="text">
+      <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Aut id dolorem consequuntur 
+        neque, excepturi similique, doloremque cum ea, ullam 
+        laboriosam dolore? Laboriosam, nihil ea. Sit dicta sint minus odio itaque.</p>
+        </div>
+    </div>
+
+    <div class="accord-item">
+      <div class="accord-header">how can i help you</div>
+      <div class="text">
+      <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Aut id dolorem consequuntur 
+        neque, excepturi similique, doloremque cum ea, ullam 
+        laboriosam dolore? Laboriosam, nihil ea. Sit dicta sint minus odio itaque.</p>
+        </div>
+    </div>
+
+    <div class="accord-item">
+      <div class="accord-header">what is javasscrip language</div>
+      <div class="text">
+      <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Aut id dolorem consequuntur 
+        neque, excepturi similique, doloremque cum ea, ullam 
+        laboriosam dolore? Laboriosam, nihil ea. Sit dicta sint minus odio itaque.</p>
+        </div>
+    </div>
+
+  </div>
+ </section>
+
+<section >
+
+         <!-- <marquee direction="down" scrollamount="50" onMouseOver="this.stop();" onMouseOut="this.start();"> -->
+    
+    <script src="script.js"></script>
+    <script src="js1/bootstrap.bundle.min.js"></script>
+</body>
+</html>
